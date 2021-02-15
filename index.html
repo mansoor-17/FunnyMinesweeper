@@ -5,6 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Funny Minesweeper</title>
+    <style>
+      table {
+        border: 2px solid black;
+        margin-top: 5%;
+        margin-left: 35%;
+      }
+      td {
+        border: 2px solid black;
+        padding: 10px;
+        font-size: 20px;
+      }
+    </style>
   </head>
   <body>
     <table id="table"></table>
@@ -16,7 +28,7 @@
           var number = i * 10 + p;
           c.innerText = number;
           c.setAttribute("id", number);
-          c.addEventListener("click");
+          c.addEventListener("click", displayStar);
           r.appendChild(c);
         }
         document.getElementById("table").appendChild(r);
