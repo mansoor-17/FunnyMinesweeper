@@ -8,6 +8,15 @@
   </head>
   <body>
     <table id="table"></table>
-    <script></script>
+    <script>
+      for (var i = 0; i < 10; i++) {
+        var r = document.createElement("tr");
+        for (var p = 1; p <= 10; p++) {
+          var c = document.createElement("td");
+          var number = i * 10 + p;
+          console.log(number);
+        }
+      }
+    </script>
   </body>
 </html>
