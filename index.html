@@ -15,9 +15,18 @@
           var c = document.createElement("td");
           var number = i * 10 + p;
           c.innerText = number;
+          c.setAttribute("id", number);
+          c.addEventListener("click");
           r.appendChild(c);
         }
         document.getElementById("table").appendChild(r);
+      }
+      function displayStar() {
+        for (var i = 1; i <= 100; i++) {
+          if (i % this.id == 0) {
+            document.getElementById(`${i}`).innerText = "**";
+          }
+        }
       }
     </script>
   </body>
