@@ -14,8 +14,10 @@
         for (var p = 1; p <= 10; p++) {
           var c = document.createElement("td");
           var number = i * 10 + p;
-          console.log(number);
+          c.innerText = number;
+          r.appendChild(c);
         }
+        document.getElementById("table").appendChild(r);
       }
     </script>
   </body>
